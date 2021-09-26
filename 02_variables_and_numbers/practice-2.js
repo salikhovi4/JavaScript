@@ -48,11 +48,11 @@ let numberInRange = Math.round(Math.random() * range);
 // Левая граница возможного числа
 let min = Math.min(n, m);
 
-console.log(min + numberInRange);
+console.log('Сгенерированное число', min + numberInRange);
 
 // Выводим отдельно целую и дробную части числа с точностью n.
 precision = 3;
-let number = 0x12f + .3 + .1; // 303.4000000000003
+let number = 0b1101 + .121 + .223;
 
 console.log('Исходное число', number);
 console.log('Целая часть', Math.floor(number));

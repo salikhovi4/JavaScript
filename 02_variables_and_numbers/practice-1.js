@@ -24,14 +24,15 @@ console.log(k * vodka);
 // Даны параметры a, b и c для квадратного уравнения.
 // Нужно вывести возможные значения х этого уравнения.
 
-let a = 3;
+let a = 6;
 let b = 5;
-let c = 10;
+let c = -1;
 
 let d = b * b - 4 * a * c;
 
 // Корень дискриминанта
 let dRoot = Math.sqrt(d);
+console.log('d =', dRoot);
 console.log('x1 =', (-b + dRoot) / (2 * a));
 console.log('x1 =', (-b - dRoot) / (2 * a));
 
