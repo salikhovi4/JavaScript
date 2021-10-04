@@ -12,5 +12,5 @@ console.log(x < y); // true
 
 x = 20;
 
-console.log(x >= y); // false
+console.log(x >= y); // true
 console.log(x <= y); // true
