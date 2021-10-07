@@ -1,3 +1,7 @@
+Все о массивах - https://learn.javascript.ru/array
+Циклы - https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration
+
+
 Задание 1
 
 Цель задания:
