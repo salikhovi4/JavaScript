@@ -1,3 +1,10 @@
+Все о функциях - https://learn.javascript.ru/function-basics
+undefined - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/undefined
+null - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/null
+Разница между undefined и null - https://devacademy.ru/article/ponimanie-null-i-undefined-v-javascript
+Стандарты офрмления кода на js - https://standardjs.com/
+Именование - https://learn.javascript.ru/variables#pridumyvayte-pravilnye-imena
+
 Задание 1:
 Напишите функцию, которая создаёт массив email-адресов, не попавших в чёрный список. В качестве аргументов
 функция должна принимать: массив строк с исходными email адресами, массив строк с email адресами в чёрном списке.
