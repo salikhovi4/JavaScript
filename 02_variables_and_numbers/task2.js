@@ -7,13 +7,16 @@ let b = 2.123;
 let n = 5;
 
 let firstNormalized = Math.round(
-    a * Math.pow(10, n)
+    a % 1 * Math.pow(10, n)
   );
   let secondNormalized = Math.round(
-    b * Math.pow(10, n)
+    b % 1 * Math.pow(10, n)
   );
   
-  console.log('Исходные числа равны', a === b);
-  console.log('Числа равны', firstNormalized === secondNormalized);
+  console.log('Даны два числа', firstNormalized, 'и', secondNormalized)
   console.log('Первое число больше', firstNormalized > secondNormalized);
   console.log('Первое число меньше', firstNormalized < secondNormalized);
+  console.log('Первое число ≥ Второе число', firstNormalized >= secondNormalized);
+  console.log('Первое число ≤ Второе число', firstNormalized <= secondNormalized);
+  console.log('Числа равны', firstNormalized === secondNormalized);
+  console.log('Числа не равны', firstNormalized !== secondNormalized);
