@@ -1,19 +1,23 @@
-// Р—Р°РґР°РЅРёРµ 2
-// Р’С‹С‡РёСЃР»РёС‚Рµ РґСЂРѕР±РЅС‹Рµ С‡Р°СЃС‚Рё С‡РёСЃРµР» a Рё b СЃ С‚РѕС‡РЅРѕСЃС‚СЊСЋ n. Р’С‹РІРµРґРёС‚Рµ РїРѕР»СѓС‡РёРІС€РёРµСЃСЏ С‡РёСЃР»Р° СЃ РїРѕРјРѕС‰СЊСЋ console.log.
-// Р’С‹РІРµРґРёС‚Рµ СЂРµР·СѓР»СЊС‚Р°С‚С‹ РёС… СЃСЂР°РІРЅРµРЅРёСЏ >, <, в‰Ґ, в‰¤, ===, в‰  СЃ РїРѕРјРѕС‰СЊСЋ console.log.
+// Задание 2
+// Задание:
+// В переменных name, surname написаны имя и фамилия человека. При этом в строках беспорядок с большими и маленькими буквами,
+// и нужно привести строки в порядок. Для этого первые буквы имени и фамилии приведите к верхнему регистру, а оставшиеся буквы —
+// к нижнему. Запишите результат в новые переменные и выведите их значения с помощью console.log. С помощью тернарных операторов и
+// console.log выведите сообщение «Имя было преобразовано» или «Имя осталось без изменений» для имени и фамилии в зависимости от того,
+// были ли исходные строки равны преобразованным.
 
-let a = 13.123456789;
-let b = 2.123;
-let n = 5;
+let name = 'EvGeNiY';
+let surname = 'ZyAyKiN';
 
-let firstNormalized = Math.round(
-    a * Math.pow(10, n)
-  );
-  let secondNormalized = Math.round(
-    b * Math.pow(10, n)
-  );
-  
-  console.log('РСЃС…РѕРґРЅС‹Рµ С‡РёСЃР»Р° СЂР°РІРЅС‹', a === b);
-  console.log('Р§РёСЃР»Р° СЂР°РІРЅС‹', firstNormalized === secondNormalized);
-  console.log('РџРµСЂРІРѕРµ С‡РёСЃР»Рѕ Р±РѕР»СЊС€Рµ', firstNormalized > secondNormalized);
-  console.log('РџРµСЂРІРѕРµ С‡РёСЃР»Рѕ РјРµРЅСЊС€Рµ', firstNormalized < secondNormalized);
+if (name.slice(0, 1) === name.slice(0, 1).toUpperCase() && name.slice(1) === name.slice(1).toLowerCase() &&
+surname.slice(0, 1) === surname.slice(0, 1).toUpperCase() && surname.slice(1) === surname.slice(1).toLowerCase()) {
+	console.log('The name remains unchanged');
+	console.log(`name: ${name}`);
+	console.log(`surname: ${surname}`);
+} else {
+	new_name = name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase()
+	new_surname = surname.slice(0, 1).toUpperCase() + surname.slice(1).toLowerCase()
+	console.log('The name has been converted');
+	console.log(`name: ${new_name}`);
+	console.log(`surname: ${new_surname}`);
+}
