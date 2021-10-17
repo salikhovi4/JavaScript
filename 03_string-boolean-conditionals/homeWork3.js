@@ -26,8 +26,6 @@ let surname = "Tikeeva";
 
 nameNew = name[0].toUpperCase() + name.substring(1).toLowerCase()
 surnameNew = surname[0].toUpperCase() + surname.substring(1).toLowerCase()
-if (name === nameNew && surname === surnameNew) {
-  console.log(`Имя ${name} ${surname} осталось без изменений`);
-} else {
-  console.log(`Имя ${name} ${surname} было преобразовано ${nameNew} ${surnameNew}`);
-}
+flag = (name === nameNew && surname === surnameNew)
+console.log(flag ? `Имя ${name} ${surname} осталось без изменений`
+: `Имя ${name} ${surname} было преобразовано ${nameNew} ${surnameNew}`);
