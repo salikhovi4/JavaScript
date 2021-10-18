@@ -41,15 +41,15 @@ console.log(new_str);
 // Для roadMines = [false, false, false, false, false, false, false, false, false, false] вывод: танк переместился на 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
 
 let roadMines;
-let count = 0;
+let counter = 0;
 roadMines = [false, false, false, false, false, false, false, false, false, false];
 
 for (let road in roadMines) {
     console.log(`The tank moved to ${parseInt(road) + 1}`);
     // parseInt - принимает строку в качестве аргумента и возвращает целое число в соответствии с указанным основанием системы счисления.
     if (roadMines[road]) {
-        count ++
-        if (count === 1) {
+        counter ++
+        if (counter === 1) {
             console.log('The tank destroyed');
         } else {
             break
