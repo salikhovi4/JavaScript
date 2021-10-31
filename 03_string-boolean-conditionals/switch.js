@@ -5,7 +5,7 @@ switch (fruit) {
         console.log('перед нами яблоко');
         break;
     case 'banana':
-        console.log('перед нами банан');b
+        console.log('перед нами банан');
         break;
     case 'watermelon':
     case 'blueberries':

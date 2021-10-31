@@ -26,3 +26,4 @@ for (let i = 1; i < 49; ++i) {
 // i < 49 т.е. 49 < 49 false
 
 console.log(fibo);
+console.log("fibo.length", fibo.length);

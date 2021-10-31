@@ -11,6 +11,7 @@ checkAdult(8);
 checkAdult(23);
 checkAdult(18);
 
+// undefined
 console.log(checkAdult(8)); // undefined
 let x = checkAdult(18);
 console.log(x); // undefined
