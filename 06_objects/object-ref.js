@@ -15,7 +15,7 @@ otherObj.model = 'KIA OPTIMA'
 console.log(digit);
 console.log(otherDigit);
 console.log(obj);
-console.log(otherObj, '\n');
+console.log(otherObj);
 
 // compare
 // obj1 и obj2 - ссылки на один и тот же объект...
@@ -37,11 +37,11 @@ let me = {
 
 // функция вернет получившийся объект, но это будет тот же объект,
 // который мы передали в первый аргумент, то есть она изменит объект me и вернет его
-let newMe = Object.assign(me, { name: 'not Dinar' }, { surname: 'not Batyrshin' });
+let newMe = Object.assign(me, { name: 'not Dinar' }, { lastName: 'not Batyrshin' });
 
 // me и newMe - один и тот же объект, и мы его изменили
-console.log(newMe);
 console.log(me);
+console.log(newMe);
 
 console.log(me === newMe); // true
 
@@ -56,5 +56,3 @@ newMe = Object.assign({}, me, { name: 'not Dinar' }, { surname: 'not Batyrshin' 
 let newMeWithSpread = { ...me, name: 'not Dinar', surname: 'not Batyrshin' };
 
 console.log(me);
-console.log(newMe);
-console.log(newMeWithSpread)

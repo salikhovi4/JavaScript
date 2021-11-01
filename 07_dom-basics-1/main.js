@@ -22,7 +22,7 @@ incrementButton.addEventListener('click', incrementCount);
 //   colorInput.addEventListener('input', paintBlock);
 //
 //   clearButton.addEventListener('click', function () {
-//     colorBlock.style.removeProperty('backgroundColor');
+//     colorBlock.style.removeProperty('background-color');
 //     colorInput.value = '';
 //   });
 // })
