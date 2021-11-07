@@ -10,10 +10,14 @@
 	      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 	      crossorigin="anonymous">
 	<script defer src="todo-app.js"></script>
+	<script defer src="Homework8_1.js"></script>
+	<script defer src="Homework8_2.js"></script>
 	<script>
     document.addEventListener('DOMContentLoaded', () => {
-      createTodoApp(document.getElementById('todo-app'), 'Мои дела');
-    })
+			let savedItems = loadOrInitializeLocalStorage();
+      createTodoApp(document.getElementById('todo-app'), 'Мои дела', savedItems);
+			addListener();
+		});
 	</script>
 </head>
 <body>
@@ -24,6 +28,7 @@
 			<a href="./mom.html" class="nav-link">Дела мамы</a>
 		</nav>
 	</div>
+	<input type="hidden" id="who" value="Me">
 	<div id="todo-app" class="container"></div>
 </body>
 </html>
