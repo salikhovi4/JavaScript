@@ -22,19 +22,19 @@ for (let val of values) {
   console.log(val);
 }
 
-console.log('KEYS\n');
+console.log('\n\nKEYS\n');
 
 for (let key of keys) {
   console.log(key, ':', computer[key]);
 }
 
-console.log('ENTRIES\n');
+console.log('\n\nENTRIES\n');
 
 for (let entry of entries) {
   console.log(`${entry[0]}: ${entry[1]}`);
 }
 
-console.log('ENTRIES WITH DESTRUCTING\n');
+console.log('\n\nENTRIES WITH DESTRUCTING\n');
 
 // то же, но более читаемо
 for (let [key, value] of entries) {

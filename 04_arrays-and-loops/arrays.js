@@ -1,4 +1,4 @@
-let fruits = ['apple', 'orange', 'watermelon', 'banana', 'blueberries'];
+let fruits = ['apple', 'orange', 'watermelon', 'banana', 'blueberries']; // литеральная запись
 
 let alphabet = [];
 

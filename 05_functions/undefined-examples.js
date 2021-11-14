@@ -12,7 +12,7 @@ console.log(array[-1]); // undefined
 
 // сравнеие с undefined
 console.log(array[-1] === undefined); // true
-console.log(array[0] === undefined); // false
+console.log(array[0] !== undefined); // true
 
 function emptyFunction() {}
 
