@@ -13,25 +13,25 @@
 console.log(healthyTemp);
 
 
-// // Когда применять const
-// // 1. Неизменяемые величины
-// // Ускорение свободного падения на Земле (g)
-// const EARTH_FALL_ACCELERATION = 9.78; // UPPER_SNAKE_CASE
-// // и на марсе
-// const MARS_FALL_ACCELERATION = 3.711;
-//
-// // 2. Значения, которые мы не хотим случайно изменить
-// for (const item of items) {
-//   console.log(item);
-// }
+// Когда применять const
+// 1. Неизменяемые величины
+// Ускорение свободного падения на Земле (g)
+const EARTH_FALL_ACCELERATION = 9.78; // UPPER_SNAKE_CASE
+// и на марсе
+const MARS_FALL_ACCELERATION = 3.711;
+
+// 2. Значения, которые мы не хотим случайно изменить
+for (const item of items) {
+  console.log(item);
+}
 
 
-// // Создаем константу с объектом
-// const me = { name: 'Batyrshin' };
-//
-// // Мы можем свободно менять свойства свмого объекта
-// me.surname = me.name;
-// me.name = 'Dinar';
-//
-// // Ошибка! Но мы не можем присвоить в константу новый объект
-// me = {};
+// Создаем константу с объектом
+const me = { name: 'Batyrshin' };
+
+// Мы можем свободно менять свойства свмого объекта
+me.surname = me.name;
+me.name = 'Dinar';
+
+// Ошибка! Но мы не можем присвоить в константу новый объект
+me = {};

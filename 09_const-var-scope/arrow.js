@@ -1,30 +1,34 @@
-// синтаксис стрелочной ф-ции: (аргументы) => { тело ф-ции }
-const arrowFn1 = (name, surname) => {
-  console.log(name, ' ', surname);
-};
-arrowFn1('John', 'Snow');
-
-// Если у ф-ции единственный аргумент, то можно опустить скобки
-const arrowFn2 = name => {
-  console.log(name)
-};
-arrowFn2();
-
-// Для ф-ций без аргументов указываются пустые скобки
-const arrowFn3 = () => {
-  console.log('Emma');
-}
-arrowFn3();
-
-// А если опустить фигурные скобки, то ф-ция вернет результат выражения
-const arrowFn4 = (name, surname) => `Hello, ${name} ${surname}`; // ({ name, surname }) для объекта
-console.log(arrowFn4('Emma', 'Hewitt'));
-
-// То же самое с фигурными скобками для наглядности
-const arrowFn5 = (name, surname) => {
-  return `Hello, ${name} ${surname}`;
-};
-console.log(arrowFn5('Emma', 'Hewitt'));
+// // синтаксис стрелочной ф-ции: (аргументы) => { тело ф-ции }
+// const arrowFn1 = (name, surname) => {
+//   console.log(name, ' ', surname);
+// };
+// arrowFn1('John', 'Snow');
+//
+// // Если у ф-ции единственный аргумент, то можно опустить скобки
+// const arrowFn2 = name => {
+//   console.log(name)
+// };
+// arrowFn2();
+//
+// // Для ф-ций без аргументов указываются пустые скобки
+// const arrowFn3 = () => {
+//   console.log('Emma');
+// }
+// arrowFn3();
+//
+// // А если опустить фигурные скобки, то ф-ция вернет результат выражения
+// const arrowFn4 = (name, surname) => `Hello, ${name} ${surname}`; // ({ name, surname }) для объекта
+// console.log(arrowFn4('Emma', 'Hewitt'));
+//
+// // То же самое с фигурными скобками для наглядности
+// const arrowFn5 = (name, surname) => {
+//   return `Hello, ${name} ${surname}`;
+// };
+// console.log(arrowFn5('Emma', 'Hewitt'));
+//
+// // если мы хотим вернуть объектв строку
+// const arrowFn6 = (name, lastName) => ({ name, lastName });
+// console.log(arrowFn6('Emma', 'Hewitt'));
 
 const me = {
   name: 'Dinar',
