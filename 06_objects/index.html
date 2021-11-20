@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Honework6_2</title>
+  <script src="./Homework6_2.js"></script>
+  <script src="./Homework6_3.js"></script>
+
+</head>
+<body>
+  <script type="text/javascript">
+    let arr = [
+      {
+        value: "Значение1",
+        label: "Значение 1",
+      },
+      {
+        value: "Значение2",
+        label: "Значение 2",
+      },
+      {
+        value: "Значение3",
+        label: "Значение 3",
+      },
+      {
+        value: "Значение4",
+        label: "Значение 4",
+      },
+      {
+        value: "Значение5",
+        label: "Значение 5",
+      }
+    ];
+    document.body.append(createSelect(arr, "Значение4"));
+  </script>
+  <script type="text/javascript">
+    let digits = { value1: 'Значение 1', value2: 'Значение 2'};
+    let num = [1, 2, 'три', 'четыре']
+    document.body.append(createSelect(convertsToArray(num)));
+    document.body.append(createSelect(convertsToArray(digits)));
+  </script>
+</body>
+</html>
