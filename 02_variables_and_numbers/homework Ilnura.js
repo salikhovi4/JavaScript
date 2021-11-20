@@ -20,9 +20,13 @@ let n = 5;
 let rem1 = Math.floor((Math.pow(10,n) * (a % 1)));
 let rem2 = Math.floor((Math.pow(10,n) * (b % 1)));
 
-console.log('Целая часть числа a:', rem1, 'Целая часть числа b:', rem2)
-
-// Не очень понятно, что именно надо вывести при сравнении
+console.log('Целая часть числа a:', rem1, 'Целая часть числа b:', rem2);
+console.log('1ое число > 2ого числа :' rem1 > rem2); 
+console.log('1ое число < 2ого числа :' rem1 < rem2); 
+console.log('1ое число >= 2ого числа :' rem1 >= rem2); 
+console.log('1ое число <= 2ого числа :' rem1 <= rem2); 
+console.log('1ое число = 2ому числу :' rem1 === rem2); 
+console.log('1ое число ≠ 2ому числу :' rem1 !== rem2);
 
 
 // 3. Написать генератор нечётных случайных чисел в диапазоне между n и m включительно.
@@ -33,4 +37,9 @@ let m = -5;
 
 let num = Math.round(Math.random() *( Math.max(n,m) - Math.min(n,m))) + Math.min(n,m)
 
-console.log(num)
+if ((num % 2) === 1) {
+	console.log(num);
+}
+else {
+	console.log(num+1);	
+}
