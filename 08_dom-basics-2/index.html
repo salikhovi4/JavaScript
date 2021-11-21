@@ -11,8 +11,9 @@
 	      crossorigin="anonymous">
 	<script defer src="./todo-app.js"></script>
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			window.createTodoApp(document.getElementById('todo-app'), 'Мои дела');
+		document.addEventListener('DOMContentLoaded', () => {
+			let savedItems = loadOrInitializeLocalStorage();
+			createTodoApp(document.getElementById('todo-app'), 'Мои дела', savedItems);
 		})
 	</script>
 </head>
@@ -23,8 +24,8 @@
 			<a href="./mom.html" class="nav-link">Дела мамы</a>
 			<a href="./dad.html" class="nav-link">Дела папы</a>
 		</nav>
-
-		<div id="todo-app"></div>
 	</div>
+	  <input type="hidden" id="who" value="Me">
+	  <div id="todo-app" class="container"></div>
 </body>
 </html>
