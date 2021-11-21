@@ -1,12 +1,12 @@
 const str = 'Строка Для ПроВеркИ';
 
-str.includes('для'); // true
+str.includes('Для'); // true
 str.includes('42'); // false
 
 str.startsWith('Строка '); // true
-str.startsWith('для'); // false
+str.startsWith('Для'); // false
 
-str.endsWith('Верки'); // true
+str.endsWith('ВеркИ'); // true
 
 str.toLowerCase(); // 'строка для проверки'
 str.toUpperCase(); // 'СТРОКА ДЛЯ ПРОВЕРКИ'
@@ -28,7 +28,8 @@ str.split('о').join('а'); // Страка Для ПраВеркИ
 
 const fullName = 'Динар Батыршин';
 const surname = 'Батыршин';
-const surnameIndex = fullName.indexOf(surname); // ищет с начала, а lastIndex
+// получаем индекс фамилии в строке с полным именем, если подстрока не найдена, метод вернет -1
+const surnameIndex = fullName.indexOf(surname); // ищет с начала, а lastIndexOf с конца
 
 console.log('Фамилия начинается с индекса', surnameIndex);
 

@@ -15,6 +15,7 @@ const last = numbers1.pop();
 console.log(last);
 console.log(numbers1); // 1, ..., 7, 8
 
+// удобно использовать shift pop в циклах
 while (numbers1.length) {
   // На каждой итерации цикла массив уменьшается на один элемент
   console.log(`Следующий элемент: ${numbers1.pop()}`);
@@ -22,8 +23,8 @@ while (numbers1.length) {
 
 const numbers2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const middle = numbers2.splice(4, 2);
-console.log(middle); // 4, 5
+const middle = numbers2.splice(4, 2); // после 4-го 2 элемента
+console.log('middle', middle); // 4, 5
 console.log(numbers2); // 0, 1, 2, 3, [отсюда убрали 2 элемента] 6, 7, ...
 
 numbers2.splice(100, 100); // [], исходный массив не изменится
@@ -39,7 +40,7 @@ console.log(numbersReversed);
 
 numbersReversed.sort(); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 numbersReversed.push(10, 11);
-numbersReversed.sort(); // [0, 10, 11, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbersReversed.sort(); // [0, 1, 10, 11, 2, 3, 4, 5, 6, 7, 8, 9]
 
 numbersReversed.sort((a, b) => a - b); // 0, 1, 2, ..., 11
 numbersReversed.sort((a, b) => b - a); // 11, 10, 9, ..., 0
@@ -69,9 +70,9 @@ const students = [
 
 students.includes({name: 'John', age: 18}); // false, тк это не тот John
 
-// объект студента {name: 'John', age: 18}
+// вернет объект студента {name: 'John', age: 18}
 students.find(student => student.name === 'John' && student.age === 18);
-// индекс студента, то есть 0
+// вернет индекс студента, то есть 0
 students.findIndex(student => student.name === 'John' && student.age === 18);
 
 students.find(student => student.age <= 16); // undefined, таких студентов нет

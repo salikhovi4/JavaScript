@@ -4,7 +4,7 @@ function printObjectProperty(obj, propName) {
 
 let me = {
   name: 'Динар',
-  surname: 'Батыршин',
+  lastName: 'Батыршин',
   middleName: 'Салихович',
   birthdate: { year: 1995, month: 4, day: 20 },
   occupation: 'Фронтенд разработчик',
