@@ -11,8 +11,8 @@ let list = [
   document.createElement('li'),
 ];
 list[0].textContent = 'Ножовка';
-list[0].textContent = 'Молоко';
-list[0].textContent = 'Хлеб';
+list[1].textContent = 'Молоко';
+list[2].textContent = 'Хлеб';
 ol.prepend(list[0]); // добавляем в начало
 ol.prepend(list[1]);
 ol.prepend(list[2]);
