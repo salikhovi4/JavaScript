@@ -11,8 +11,8 @@ let list = [
   document.createElement('li'),
 ];
 list[0].textContent = 'Ножовка';
-list[0].textContent = 'Молоко';
-list[0].textContent = 'Хлеб';
+list[1].textContent = 'Молоко';
+list[2].textContent = 'Хлеб';
 ol.prepend(list[0]); // добавляем в начало
 ol.prepend(list[1]);
 ol.prepend(list[2]);
@@ -30,10 +30,10 @@ let breadBought = document.createElement('li');
 breadBought.innerHTML = '<s>Хлеб</s>'
 ol.children[0].replaceWith(breadBought); // замещаем элемент
 
+breadBought.textContent = '<s>Хлеб</s>';
 ol.children[4].remove();
 
-breadBought.textContent = '<s>Хлеб</s>';
-
+// установка атрибутов дом-элементов
 ol.id = 'qwe';
 ol.reversed = true;
 ol.start = 20;
@@ -42,7 +42,7 @@ ol.removeAttribute('start');
 ol.classList.add('class1');
 ol.classList.remove('class1');
 ol.classList.toggle('class1');
-ol.classList.contains('class1');
+ol.classList.contains('class1'); // наличие класса
 ol.classList.remove('class1');
 ol.classList.contains('class1');
 

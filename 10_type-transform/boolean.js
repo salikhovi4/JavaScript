@@ -14,13 +14,13 @@ function hasSomething(value) {
     case "undefined": return false;
   }
 
-  // return Boolean(value);
+  return Boolean(value);
 
-  // return !!value;
+  return !!value;
 }
 
 function isEmpty(value) {
   return !value;
 }
 
-isEmpty('');
+console.log(isEmpty('')); // true

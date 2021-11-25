@@ -25,3 +25,6 @@ String([
   null, // ''
   undefined, // ''
 ]); // 'true,false,1,1.1,string,[object Object],toString(),,'
+
+console.log(!!String([null]));
+console.log(!!String([undefined]));
