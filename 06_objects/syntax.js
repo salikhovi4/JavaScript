@@ -1,10 +1,10 @@
 let name = 'Динар';
-let surname = 'Батыршин';
-let middle = 'Салихович';
+let lastName = 'Батыршин';
+let middleName = 'Салихович';
 
 let me = {
-  name: name,
-  surname: surname,
+  name,
+  lastName,
   middleName: middle,
   birthdate: { year: 1995, month: 4, day: 20 },
   occupation: 'Фронтенд разработчик',
