@@ -35,12 +35,6 @@
 // новый отдельный массив, а не изменять старый, который пришёл в качестве параметра.
 
 
-let objects = [
-    { name: 'Василий', surname: 'Васильев' },
-    { name: 'Иван', surname: 'Иванов' },
-    { name: 'Пётр', surname: 'Петров' }
-    ];
-
 
 function fn(obj_list, property, value) {
     let new_list = Array();
@@ -52,5 +46,21 @@ function fn(obj_list, property, value) {
     return new_list
 }
 
-console.log(fn(objects, 'name', 'Иван'));
-// export default fn
+export default {fn}
+
+let objects = [
+    { 
+        name: 'Василий', 
+        surname: 'Васильев' 
+    },
+    {
+        name: 'Иван',
+        surname: 'Иванов' 
+    },
+    {
+        name: 'Пётр',
+        surname: 'Петров'
+    }
+];
+
+// console.log(fn(objects, 'name', 'Иван'));

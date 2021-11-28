@@ -33,6 +33,24 @@
 // Для размещения текста внутри DOM-элемента можно приравнять нужный текст свойству innerHTML.
 
 
+function create_select(arr, str=0) {
+    let select = document.createElement("select");
+    
+    let _str = arr[str].value
+    if (!arr[str]) {
+        _str = arr[0].value
+    }
+
+    for (let i = 0; i < arr.length; i += 1) {
+        let value = arr[i].value;
+        let label = arr[i].label;
+        let option = new Option(label, value, _str === value, _str === value);
+        select.options.add(option);
+    }
+
+    return select;
+};
+
 let arr = [
     {
         value: "Value1",
@@ -56,25 +74,4 @@ let arr = [
     },
 ];
 
-
-function create_select(arr, str=0) {
-    let select = document.createElement("select");
-    
-    let _str = arr[str].value
-    if (!arr[str]) {
-        _str = arr[0].value
-    }
-
-    for (let i = 0; i < arr.length; i += 1) {
-        let value = arr[i].value;
-        let label = arr[i].label;
-        let option = new Option(label, value, _str === value, _str === value);
-        select.options.add(option);
-    }
-
-    return select;
-}
-
-
-document.body.append(create_select(arr)); 
-
+document.body.append(create_select(arr));

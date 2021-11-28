@@ -44,14 +44,20 @@ function convert(obj) {
     }
 
     return res
-}
+};
+
 
 let my_obj = {
     '1': 0,
-    'lol' : 'kek',
+    'lol': 'kek',
     'hello': 'world',
     'js': 'sucks'
-}
+};
 
-// let my_obj = [1, 2, 'три', 'четыре']
-console.log(convert(my_obj)); 
+let num = [1, 2, 'три', 'четыре'];
+
+// document.body.append(create_select(convert(my_obj)));
+document.body.append(create_select(convert(num)));
+
+
+export default {convert};
