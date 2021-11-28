@@ -34,4 +34,4 @@ let new_surname = surname.substr(0, 1).toUpperCase() + surname.substr(1).toLower
 let res_name = (_name == new_name) ?  "Name wasn't changed" : "Name was changed";
 let res_surname = (surname == new_surname) ?  "Surname wasn't changed" : "Surname was changed";
 
-console.log(res_name + res_surname)
+console.log(res_name + '; ' + res_surname)
