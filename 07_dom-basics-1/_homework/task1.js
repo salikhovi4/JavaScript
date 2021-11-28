@@ -28,7 +28,28 @@
 // clearInterval для остановки таймер. Подробнее: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval.
 // Не бойтесь вызывать clearInterval даже если не уверены, что таймер запущен. В таком случае не будет ошибки, просто ничего не произойдёт.
 
+console.log(document);
+let count_display = document.querySelector('.printBlock');
+let start_button = document.querySelector('.start-button');
+let value_timer = document.getElementById("valueTimer");
 
+let n_interv_id;
 
-setInterval()
-clearInterval()
+function startTimer() {
+    clearInterval(n_interv_id);
+    if (value_timer.value > 0) {
+        count_display.textContent = value_timer.value;
+        n_interv_id = setInterval(tickTimer, 1000);
+        value_timer.value = "";
+    }
+}
+
+function tickTimer() {
+    let current_count = parseInt(count_display.textContent);
+    count_display.textContent = current_count - 1;
+    if (parseInt(count_display.textContent) === 0) {
+        clearInterval(n_interv_id);
+    }
+}
+
+start_button.addEventListener('click', startTimer);
