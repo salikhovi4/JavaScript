@@ -1,0 +1,28 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "Intro JS Lession",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/07-013/JavaScript.git"
+  },
+  "keywords": [
+    "Javascript",
+    "NodeJS"
+  ],
+  "author": "prog420",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/07-013/JavaScript/issues"
+  },
+  "homepage": "https://github.com/07-013/JavaScript#readme",
+  "dependencies": {
+    "express": "4.16.4",
+    "nodemon": "1.18.7"
+  }
+}

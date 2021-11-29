@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add Mocha styles to display results -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <!-- Add Mocha framework itself -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <!-- Add Chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // Declare global assert
+        let assert = chai.assert;
+    </script>
+    <script>
+        // Enable BDD (Behavior Driven Development)
+        mocha.setup('bdd');
+    </script>
+</head>
+<body>
+    <span>Задание 1: Фильтрация массива объектов с автоматическими тестами<br></span>
+    <!-- Task 1 of 6th homework -->
+    <script src="1.js"></script>
+    <!-- Specifications (describe, it, ...) -->
+    <script src="specs.js"></script>
+    <!-- Output field for tests -->
+    <div id="mocha"></div>
+    <!-- Run tests -->
+    <script>
+        mocha.run()
+    </script>
+
+    <span>Задание 2 и 3: Создание выпадающих списков (2 - Массив объектов, 3 - Массив чисел / строк)<br></span>
+    <script src="2_3.js"></script>
+    <script>
+        let arr = [
+            {
+                value: "Option1",
+                label: "Option 1",
+            },
+            {
+                value: "Option2",
+                label: "Option 2",
+            },
+            {
+                value: "Option3",
+                label: "Option 3",
+            }
+        ];
+        let mixed = [1, 2, 'Три', 'Four']
+        document.body.append(createSelect(arr, "Option2"));
+        document.body.append(document.createElement('br'));
+        document.body.append(createSelect(mixed));
+    </script>
+</body>
+</html>
